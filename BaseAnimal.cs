@@ -17,7 +17,7 @@ namespace AnimalOOPExercise
         }
         public void DoEat()
         {
-            Console.WriteLine(Name + " is eating");
+            Console.WriteLine($"The {Name} is eating food.");
         }
 
         public abstract void DoMove();

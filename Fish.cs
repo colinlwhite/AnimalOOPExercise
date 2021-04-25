@@ -6,10 +6,8 @@ namespace AnimalOOPExercise
 {
     public class Fish : BaseAnimal
     {
-        public Fish(string name) : base(name)
-        {
+        public Fish(string name) : base(name) { }
 
-        }
         public override void DoMove()
         {
             Console.WriteLine($"{Name} is swimming!");
@@ -17,7 +15,7 @@ namespace AnimalOOPExercise
 
         public override void MakeSound()
         {
-            Console.WriteLine($"Can a {Name} make noise under water?");
+            Console.WriteLine($"The {Name} is drumming underwater.");
         }
     }
 }

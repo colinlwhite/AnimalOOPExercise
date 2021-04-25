@@ -12,15 +12,12 @@ namespace AnimalOOPExercise
         /// instances of the derived class.
         /// </summary>
         /// <param name="name"></param>
-        public Bird(string name) : base(name)
-        {
-
-        }
+        public Bird(string name) : base(name) { }
         
         public override void MakeSound()
         {
             // Console.WriteLine("The" + Name + "is doing whatever " + Name + "'s do");
-            Console.WriteLine($"The {Name} is making whatever sound that {Name} make");
+            Console.WriteLine($"The {Name} is whistling");
         }
 
         public override void DoMove()

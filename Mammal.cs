@@ -6,10 +6,13 @@ namespace AnimalOOPExercise
 {
     public class Mammal : BaseAnimal
     {
-        public Mammal(string name) : base(name)
-        {
-
-        }
+        /// <summary>
+        /// Implementing Inheritance because we're inheriting functionality from the base class, BaseAnimal
+        /// We're inheriting the DoMove and MakeSound methods
+        /// </summary>
+        /// <param name="name"></param>
+        public Mammal(string name) : base(name) { }
+       
         public override void DoMove()
         {
             Console.WriteLine($"The {Name} is running!");
@@ -17,7 +20,7 @@ namespace AnimalOOPExercise
 
         public override void MakeSound()
         {
-            Console.WriteLine($"The {Name} makes whatever sound that a {Name} makes!");
+            Console.WriteLine($"The {Name} roars!");
         }
     }
 }
