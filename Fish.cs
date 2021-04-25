@@ -4,21 +4,20 @@ using System.Text;
 
 namespace AnimalOOPExercise
 {
-    public class Fish : IAnimal
+    public class Fish : BaseAnimal
     {
-        public void DoEat()
+        public Fish(string name) : base(name)
         {
-            throw new NotImplementedException();
+
+        }
+        public override void DoMove()
+        {
+            Console.WriteLine($"{Name} is swimming!");
         }
 
-        public void DoMove()
+        public override void MakeSound()
         {
-            throw new NotImplementedException();
-        }
-
-        public void MakeSound()
-        {
-            throw new NotImplementedException();
+            Console.WriteLine($"Can a {Name} make noise under water?");
         }
     }
 }

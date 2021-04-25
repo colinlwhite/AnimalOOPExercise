@@ -7,8 +7,8 @@ namespace AnimalOOPExercise
     abstract public class BaseAnimal : IAnimal
     {
         /// <summary>
-        /// Encapsulation because only child classes can access this
-        /// Program.cs doesn't need to know about how this class works internally
+        /// Encapsulation because only subclasses of BaseAnimal can access this property.
+        /// Program.cs file doesn't need to know about how this class works internally
         /// </summary>
         protected string Name { get; set; }
         protected BaseAnimal(string name)
